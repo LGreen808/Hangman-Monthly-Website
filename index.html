@@ -26,9 +26,33 @@
             <div id="difficultySelection">
                <h3>Select Difficulty</h3>
                <button class="btn btn-success difficulty-btn" onclick="startGame('easy')">Easy</button>
-               <button class="btn btn-success difficulty-btn" onclick="startGame('easy')">Medium</button>
-               <button class="btn btn-success difficulty-btn" onclick="startGame('easy')">Hard</button>
+               <button class="btn btn-warning difficulty-btn" onclick="startGame('easy')">Medium</button>
+               <button class="btn btn-danger difficulty-btn" onclick="startGame('easy')">Hard</button>
             </div> 
+            
+            <div id="diffuciltyBox" class="mt-3 p-3 fw-bold"></div>  <!--ADD d-none here-->
+            
+          <div id="gameArea" class="mt-4"><!--ADD d-none here--> 
+             <h2 id="wordDisplay" class="mb-3">_ _ _ _ _</h2>
+
+             <div class="mb-3">
+                <input type="text" id="letterInput" maxlength="1" class="form-control d-inline-block w-auto" placeholder="Enter a Letter">
+                <button id="guessBtn" class="btn btn-warning" onclick="guessLetter()">Guess</button> 
+             </div>
+            
+
+             <p id="wrongLetters" class="fw-bold text-danger">Wrong Guesses: </p>
+
+             <img src="img/image6.jpg" alt="" id="shamrock" class="shamrock-img">
+
+             <div class="mt-4">
+                <button id="restartBtn" class="btn btn-danger" onclick="restartGame()">Restart Game</button>
+             </div>
+
+
+
+         </div>
+            
     
 
 
