@@ -26,10 +26,19 @@ function startGame(level){
     //reset game
     wrongGuesses = 0
     guessedLetters = []
-
+    
     selectedWord = getRandomWord(level) // Gets a random word based on the level the user selected
 
-    updateDifficultyDisplay(level) 
+    updateDifficultyDisplay(level)
+    
+// Show Game Area / Difficulty Display , hide selection buttons
+document.getElementById('gameArea').classList.remove('d-none')
+document.getElementById('gameArea').classList.add('d-block')
+
+document.getElementById('difficultyBox').classList.remove('d-none')
+document.getElementById('difficultyBox').classList.add('d-block')
+
+document.getElementById('difficultySelection').classList.add('d-none')
 }
 
 function getRandomWord(level) {
@@ -50,15 +59,15 @@ function updateDifficultyDisplay(level){
 
     if (level === 'easy') {
        difficultyBox.classList.add('easy')
-       difficultyBox.textContent = 'Difficulty: Easy'
+       difficultyBox.textContent = 'Difficulty: easy'
     }
     else if (level === 'medium'){
         difficultyBox.classList.add('medium')
-        difficultyBox.textContent = 'Difficulty: Medium'
+        difficultyBox.textContent = 'Difficulty: medium'
 
     } else if(level === 'hard') {
        difficultyBox.classList.add('hard')
-       difficultyBox.textContent = 'Difficulty: Hard'
+       difficultyBox.textContent = 'Difficulty: hard'
 
     }
 
