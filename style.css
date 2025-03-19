@@ -1,3 +1,3 @@
-body {
-    background-image: url(imgs/PossibleBackground2.jpg);
-}
+
+/* Matched Box Colors To Difficulty */
+.easy { background-color: greenyellow; color: green}
