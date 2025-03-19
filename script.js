@@ -59,15 +59,15 @@ function updateDifficultyDisplay(level){
 
     if (level === 'easy') {
        difficultyBox.classList.add('easy')
-       difficultyBox.textContent = 'Difficulty: easy'
+       difficultyBox.textContent = 'Difficulty: Easy'
     }
     else if (level === 'medium'){
         difficultyBox.classList.add('medium')
-        difficultyBox.textContent = 'Difficulty: medium'
+        difficultyBox.textContent = 'Difficulty: Medium'
 
     } else if(level === 'hard') {
        difficultyBox.classList.add('hard')
-       difficultyBox.textContent = 'Difficulty: hard'
+       difficultyBox.textContent = 'Difficulty: Hard'
 
     }
 
