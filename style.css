@@ -1,5 +1,16 @@
-body {
-    background-image: url(imgs/PossibleBackground2.jpg);
-}
 
-/*REMEMBER TO GET RID OF THE REPEAT ON THE BACKGROUND IMAGE*/
+/* Matched Box Colors To Difficulty */
+
+
+
+
+
+
+
+
+
+body {
+    background: url(imgs/PossibleBackgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
