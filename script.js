@@ -124,13 +124,40 @@ if (selectedWord.includes(guessedLetter)) {
 function updateWrongGuess(guessedLetter){
   wrongGuesses++
   document.getElementById('wrongLetters').textContent += `${guessedLetter}`
-  document.getElementById('shamrock').src = `imgs/shamrock${6-wrongGuesses}.jpg`
+ // document.getElementById('shamrock').src = `imgs/shamrock${6-wrongGuesses}.jpg`
   
 
   if (wrongGuesses === maxMistakes){
     endgame(false)
   }
 }
+
+function updateCorrectGuess(guessedLetter){
+   let newDisplayedWord = '' 
+
+
+   for (let i=0; i < selectedWord.length; i++) {
+    if (selectedWord[i] === guessedLetter){
+        newDisplayedWord += guessedLetter
+    }else {
+    newDisplayedWord += displayedWord[i]
+    }
+   }
+  
+  displayedWord = newDisplayedWord
+  updateUI()
+  
+
+  // Check if the player has guessed all letters
+if (!displayedWord.includes('_')) {
+    endGame(true)
+}
+
+
+
+}
+
+
 
 
 
