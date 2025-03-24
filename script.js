@@ -119,4 +119,20 @@ if (selectedWord.includes(guessedLetter)) {
  inputField.value = '' // Clear input field
  document.getElementById('letterInput').focus() // Refocus input field for next guess
 
-}    
+}   
+
+function updateWrongGuess(guessedLetter){
+  wrongGuesses++
+  document.getElementById('wrongLetters').textContent += `${guessedLetter}`
+  document.getElementById('shamrock').src = `imgs/shamrock${6-wrongGuesses}.jpg`
+  
+
+  if (wrongGuesses === maxMistakes){
+    endgame(false)
+  }
+}
+
+
+
+
+
