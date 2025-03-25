@@ -157,6 +157,18 @@ if (!displayedWord.includes('_')) {
 
 }
 
+function endGame(won){
+    if (endGame === won) {
+        alert('You have won the game!')
+     
+
+        
+    }
+    if (endGame === false) {
+        alert('Im sorry, you lost')
+    }
+}
+
 
 
 
