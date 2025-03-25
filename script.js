@@ -73,13 +73,14 @@ function updateDifficultyDisplay(level){
        difficultyBox.classList.add('hard')
        difficultyBox.textContent = 'Difficulty: Hard'
                 
-    }                                
+    }    
+    updateUI()                            
 
                                                                                                                                                                                                                      
 }   
 
 function updateUI() {
-    document.getElementById('wordDisplay').textContent = displayedWord.split('').join('') // Display the word with spaces between
+    document.getElementById('wordDisplay').textContent = displayedWord.split('').join(' ') // Display the word with spaces between
     
 }
 
@@ -124,7 +125,7 @@ if (selectedWord.includes(guessedLetter)) {
 function updateWrongGuess(guessedLetter){
   wrongGuesses++
   document.getElementById('wrongLetters').textContent += `${guessedLetter}`
- // document.getElementById('shamrock').src = `imgs/shamrock${6-wrongGuesses}.jpg`
+  document.getElementById('shamrock').src = `imgs/ShamrockImage${6-wrongGuesses}.jpg`
   
 
   if (wrongGuesses === maxMistakes){
@@ -158,21 +159,32 @@ if (!displayedWord.includes('_')) {
 }
 
 function endGame(won){
-    if (endGame === true) {
-        alert('You have won the game!')
+    if (won) {
+        alert(`You have won the game! The word was ${selectedWord}`)
      
 
         
     }
-    else (endGame === false) {
-        alert('Im sorry, you lost')
+    else  {
+        alert(`Im sorry, you lost The word was ${selectedWord}`)
     }
 }
+
+// End Message - Shows a message that notifies the user that the game is over
+let gameEnd =
+function gameEnd {
+    if (gameEnd === end)
+    console.log('The Game is Over, Goodbye')
+}
+
+
+
 
 // /Restart Game - Reloads the page to reset everything
 function restartGame (){
     location.reload()
 }
+
 
 
 
