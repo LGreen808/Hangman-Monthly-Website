@@ -99,7 +99,7 @@ function guessLetter () {
 }
   
 // Check if letter was already guessed
-if (guessedLetters.includes(guessLetter)) {
+if (guessedLetters.includes(guessedLetter)) {
 alert('You have already guessed this letter, please choose another one!')
 inputField.value = '';
 return;
@@ -158,15 +158,20 @@ if (!displayedWord.includes('_')) {
 }
 
 function endGame(won){
-    if (endGame === won) {
+    if (endGame === true) {
         alert('You have won the game!')
      
 
         
     }
-    if (endGame === false) {
+    else (endGame === false) {
         alert('Im sorry, you lost')
     }
+}
+
+// /Restart Game - Reloads the page to reset everything
+function restartGame (){
+    location.reload()
 }
 
 
