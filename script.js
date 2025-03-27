@@ -171,8 +171,9 @@ function endGame(won){
 }
 
 // End Message - Shows a message that notifies the user that the game is over
-document.getElementById gameEnd = `The game is over goodbye`
+document.getElementById('gameEnd') = `The game is over goodbye`
 console.log(gameEnd)
+
 
 
 
