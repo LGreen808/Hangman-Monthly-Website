@@ -125,7 +125,7 @@ if (selectedWord.includes(guessedLetter)) {
 function updateWrongGuess(guessedLetter){
   wrongGuesses++
   document.getElementById('wrongLetters').textContent += `${guessedLetter}`
-  document.getElementById('shamrock').src = `imgs/ShamrockImage${6-wrongGuesses}.jpg`
+  document.getElementById('shamrock').src = `imgs/${6-wrongGuesses}.`
   
 
   if (wrongGuesses === maxMistakes){
