@@ -8,7 +8,7 @@ const wordList = [
     'leprechaun',
     'march',
     'greenery',
-    'tradition'
+    'tradition',
 ]
 
 // Declare Variables
