@@ -18,10 +18,9 @@ let wrongGuesses = 0
 let guessedLetters = []
 const maxMistakes = 6
 
-// Lets the enter key put in a letter guess
-document.getElementById('guessBtn').addEventListener('click', function () {
+
       
-})
+
     
 window.addEventListener('keydown', function (event) {
     if (event.key == "Enter") {
