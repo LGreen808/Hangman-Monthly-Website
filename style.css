@@ -1,9 +1,16 @@
 
-/* Matched Box Colors To Difficulty */
+#guessBtn {
+   background-color: #224d17;
+   text-decoration: white;
+}
+
+/* Matched Box Colors for Difficulty */
 
 
 
-
+h1 {
+    text-align: center;
+}
 
 
 
