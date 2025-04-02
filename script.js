@@ -167,15 +167,16 @@ function updateCorrectGuess(guessedLetter) {
 
 }
 
+
 function endGame(won) {
     if (won) {
-        alert(`You have won the game! The word was ${selectedWord}`)
+        console.log(`You have won the game! The word was ${selectedWord}`)
 
 
 
     }
     else {
-        alert(`Im sorry, you lost The word was ${selectedWord}`)
+        console.log(`Im sorry, you lost The word was ${selectedWord}`)
     }
 }
 
