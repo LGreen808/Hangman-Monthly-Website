@@ -44,19 +44,24 @@
             
             <div class="row">
           <div id="gameArea" class="mt-4 d-none col-sm-4 col-md-6"><!--ADD d-none here--> 
-             <h2 id="wordDisplay" class="mb-3 col-sm-4 col-md-6">_ _ _ _ _</h2>
+             <h2 id="wordDisplay" class="mb-3 col-sm-4 col-md-6 text-center">_ _ _ _ _</h2>
              </div>
 
-             <div class="mb-3 col-sm-4 col-md-6">
-                <input type="text" id="letterInput" maxlength="1" class="form-control d-inline-block w-auto col-sm-6" placeholder="Enter a Letter">
+             <div class="mb-3 col-sm-4 col-md-6 text-center pt-4">
+                <input type="text" id="letterInput" maxlength="1" class="form-control d-inline-block w-auto col-sm-6 text-center" placeholder="Enter a Letter">
                 <button id="guessBtn" class="btn btn-success-emphasis col-sm-4 col-md-6" onkeydown, onclick="guessLetter()">Guess</button> 
              </div>
 
             
 
-             <p id="wrongLetters" class="fw-bold text-danger">Wrong Guesses: </p>
+             <p id="wrongLetters" class="fw-bold text-danger text-center">Wrong Guesses: </p>
 
-             <img src="imgs/" alt="" id="shamrock" class="shamrock-img">
+             <img src="imgs/Full Shamrock.png" alt="" id="shamrock" class="shamrock-img">
+             <img src="imgs/3Shamrock.png" alt="" id="shamrock1" class="shamrock-img">
+             <img src="imgs/2Shamrock.png" alt="" id="shamrock2" class="shamrock-img">
+             <img src="imgs/1Shamrock.png" alt="" id="shamrock3" class="shamrock-img">
+            
+
 
              <div class="mt-6">
                 <button id="restartBtn" class="btn btn-danger mt-6" onclick="restartGame()">Restart Game</button>

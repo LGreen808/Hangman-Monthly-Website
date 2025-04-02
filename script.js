@@ -134,7 +134,8 @@ function guessLetter() {
 function updateWrongGuess(guessedLetter) {
     wrongGuesses++
     document.getElementById('wrongLetters').textContent += `${guessedLetter}`
-    document.getElementById('shamrock').src = `imgs/${6 - wrongGuesses}.`
+    document.getElementById('shamrock').src = `imgs/ShamrockImage.jpg${6 - wrongGuesses}.`
+    document.getElementById('shamrock1').src = `imgs/1Shamrock.png ${5 - wrongGuesses}.`
 
 
     if (wrongGuesses === maxMistakes) {
