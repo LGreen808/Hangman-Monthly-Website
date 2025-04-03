@@ -1,3 +1,7 @@
+alert('Hello, welcome to my game! Please select a level of difficulty ')
+
+
+
 // Word List
 const wordList = [
     'gold',
