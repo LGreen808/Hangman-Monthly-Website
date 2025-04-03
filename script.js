@@ -122,8 +122,14 @@ function guessLetter() {
     // Check if guessed letter is in the selected word
     if (selectedWord.includes(guessedLetter)) {
         updateCorrectGuess(guessedLetter)
+        let goodSound = document.getElementById('goodSound')
+        goodSound.muted = false
+        goodSound.play();
     } else {
         updateWrongGuess(guessedLetter)
+       let badSound = document.getElementById('badSound')
+       badSound.muted = false
+       badSound.play();
     }
 
     inputField.value = '' // Clear input field
