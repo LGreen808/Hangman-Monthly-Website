@@ -2,6 +2,7 @@
 const wordList = [
     'gold',
     'luck',
+    'pot',
     'clover',
     'green',
     'shamrock',
@@ -122,6 +123,8 @@ function guessLetter() {
     // Check if guessed letter is in the selected word
     if (selectedWord.includes(guessedLetter)) {
         updateCorrectGuess(guessedLetter)
+    
+
     } else {
         updateWrongGuess(guessedLetter)
     }
@@ -134,8 +137,12 @@ function guessLetter() {
 function updateWrongGuess(guessedLetter) {
     wrongGuesses++
     document.getElementById('wrongLetters').textContent += `${guessedLetter}`
-    document.getElementById('shamrock').src = `imgs/ShamrockImage.jpg${6 - wrongGuesses}.`
-    document.getElementById('shamrock1').src = `imgs/1Shamrock.png ${5 - wrongGuesses}.`
+    document.getElementById('shamrock').src = `imgs/ShamrockImage.jpg${0 + wrongGuesses}.png`
+    document.getElementById('myAudio') {
+      playSound();
+    };
+
+    
 
 
     if (wrongGuesses === maxMistakes) {
