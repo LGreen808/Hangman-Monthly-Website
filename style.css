@@ -30,3 +30,8 @@ h2 {
 h3 {
     text-align: center;
 }
+
+imgs {
+    width: 30px;
+    height: 30px;
+}
