@@ -172,19 +172,22 @@ function updateCorrectGuess(guessedLetter) {
 function endGame(won) {
     if (won) {
         console.log(`You have won the game! The word was ${selectedWord}`)
-
-
+        // End Message - Shows a message that notifies the user that the game is over
+let endMessage = `The Game is Over!.....Goodbye`
+console.log(endMessage)
+document.getElementById('gameOver').innerHTML = endMessage
 
     }
     else {
         console.log(`Im sorry, you lost The word was ${selectedWord}`)
+        // End Message - Shows a message that notifies the user that the game is over
+let endMessage = `The Game is Over!.....Goodbye`
+console.log(endMessage)
+document.getElementById('gameOver').innerHTML = endMessage
     }
 }
 
-// End Message - Shows a message that notifies the user that the game is over
-let endMessage = `The Game is Over, Goodbye`
-console.log(endMessage)
-document.getElementById('gameOver').innerHTML = endMessage
+
 
 
 
