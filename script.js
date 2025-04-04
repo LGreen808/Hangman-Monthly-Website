@@ -137,9 +137,10 @@ function guessLetter() {
 function updateWrongGuess(guessedLetter) {
     wrongGuesses++
     document.getElementById('wrongLetters').textContent += `${guessedLetter}`
-    document.getElementById('shamrock').src = `imgs/ShamrockImage.jpg${0 + wrongGuesses}.png`
-    document.getElementById('myAudio') {
-      playSound();
+    document.getElementById('shamrock').src = `imgs/ShamrockImage.png${0 + wrongGuesses}.png`
+    document.getElementById('shamrock1').src = `imgs/3Shamrock.png${1 + wrongGuesses}.png`
+    document.getElementById('shamrock2').src = `imgs/2Shamrock.png${2 + wrongGuesses}.png`
+    document.getElementById('shamrock3').src = `imgs/3Shamrock.png${3 + rongGuesseses}.png`
     };
 
     
