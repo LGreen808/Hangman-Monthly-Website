@@ -56,7 +56,7 @@ function startGame(level) {
 
     document.getElementById('letterInput').focus();
 }
-
+// Gets a word with a certain length based on the level of difficulty that the user selects
 function getRandomWord(level) {
     let filteredWords = wordList.filter(word => {
         if (level === 'easy') return word.length <= 4
@@ -144,12 +144,14 @@ function guessLetter() {
 function updateWrongGuess(guessedLetter) {
     wrongGuesses++
     document.getElementById('wrongLetters').textContent += `${guessedLetter}`
-    document.getElementById('shamrock').src = `imgs/ShamrockImage.jpg${6 - wrongGuesses}.`
-    document.getElementById('shamrock1').src = `imgs/1Shamrock.png ${5 - wrongGuesses}.`
-
+    //This is my health bar, which makes the shamrock become less and less until 6 wrong guesses
+    document.getElementById('shamrock').src = `imgs/ShamrockImage.jpg${1 + wrongGuesses}.`
+    document.getElementById('shamrock1').src = `imgs/1Shamrock.png ${2 + wrongGuesses}.`
+    document.getElementById('shamrock2').src = `imgs/2Shamrock.png ${3 + wrongGuesses}.`
+    document.getElementById('shamrock3').src = `imgs/3Shamrock.png ${4 + wrongGuesses}.`
 
     if (wrongGuesses === maxMistakes) {
-        endgame(false)
+         endgame(false)
     }
 }
 
