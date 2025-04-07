@@ -17,6 +17,7 @@ h1 {
 
 
 body {
+    /*This is the dog background image*/
     background: url(imgs/PossibleBackgroundImage.jpg);
     background-repeat: no-repeat;
     background-size: cover;

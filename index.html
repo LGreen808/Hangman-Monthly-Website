@@ -23,19 +23,19 @@
     <div class="container-fluid">
     <body>
         <main class="container text-center">
-            <h1 class="mb-4 col-sm-4 col-md-12 text-center">Hangman</h1>
+            <h1 class="mb-4 col-sm-4 col-md-12 text-center m-auto">Hangman</h1>
             <h2>A Fun Game of Hangman with a St. Patrick's Day Theme!</h2>
 
              <div class="row">
             <div id="difficultySelection" class="row mt-4 col-sm-4 col-md-12 text-center">
-               <h3>Select Difficulty</h3>
+               <h3 class="text-center">Select Difficulty</h3>
             </div>
             </div>
             <!--The Buttons for the User to select either "easy" "medium" or "hard"-->
             <div class="row">
-               <button class="easy btn btn-success difficulty-btn mb-3 lg-6 mt-4 col-sm-4 col-md-4" onclick="startGame('easy')">Easy</button>
-               <button class="medium btn btn-warning difficulty-btn mb-3 lg-6 mt-4 col-sm-4 col-md-4" onclick="startGame('medium')">Medium</button>
-               <button class="hard btn btn-danger difficulty-btn mb-3 lg-6 mt-4 col-sm-4 col-md-4" onclick="startGame('hard')">Hard</button>
+               <button class="easy btn btn-success difficulty-btn mb-3 lg-6 mt-4 col-sm-4 col-md-4 col-lg-4" onclick="startGame('easy')">Easy</button>
+               <button class="medium btn btn-warning difficulty-btn mb-3 lg-6 mt-4 col-sm-4 col-md-4 col-lg-4" onclick="startGame('medium')">Medium</button>
+               <button class="hard btn btn-danger difficulty-btn mb-3 lg-6 mt-4 col-sm-4 col-md-4 col-lg-4" onclick="startGame('hard')">Hard</button>
             </div>
             </div> 
             
@@ -51,8 +51,8 @@
              </div>
 
              <div class="mb-3 col-sm-4 col-md-6 text-center pt-4">
-                <input type="text" id="letterInput" maxlength="1" class="form-control d-inline-block w-auto col-sm-6 text-center" placeholder="Enter a Letter">
-                <button id="guessBtn" class="btn btn-success-emphasis col-sm-4 col-md-6 text-center" onkeydown, onclick="guessLetter()">Guess</button> 
+                <input type="text" id="letterInput" maxlength="1" class="form-control d-inline-block w-auto text-center m-auto" placeholder="Enter a Letter">
+                <button id="guessBtn" class="btn btn-success-emphasis col-sm-4 text-center m-auto" onkeydown, onclick="guessLetter()">Guess</button> 
              </div>
 
             
